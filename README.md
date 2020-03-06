@@ -3,6 +3,9 @@ Udacity Self-Driving Car Engineer Nanodegree Program
 
 This project utilizes an extended kalman filter to estimate the state of a moving object of interest with noisy lidar and radar measurements. Maintaining low RMSE values is the main focus of this project, as any object tracking software would be useless in the real-world if it is not accurate.
 
+[//]: # (Image References)
+[image1]: runtime_example.jpg "Runtime Example"
+
 ## Basic Build Instructions
 
 Running the code requires connecting to the Udacity CarND Term 2 Simulator, which can be downloaded [here](https://github.com/udacity/self-driving-car-sim/releases).
@@ -43,9 +46,11 @@ Launch the simulator `term2_sim.exe`. Select "Project 1/2: EKF and UKF" from the
 Connected!!!
 ```
 
-Click the "Start" button and the simulator will run. `ExtendedKF` will begin outputting `x` (position) and `P` (covariance) values to the terminal. The error values will be outputted to the simulation screen itself under "RMSE".
+Click the "Start" button and the simulator will run. `ExtendedKF` will begin outputting `x` (position) and `P` (covariance) values to the terminal. The error values will be outputted to the simulation screen itself under "RMSE". Green triangular markers denote where the Kalman Filter believes the object is.
 
+![alt text][image1]
 
+For reference, the project rubric requires RMSE values equal to or less than [.11, .11, 0.52, 0.52]. This code should perform consistently to the example image across multiple situations. 
 
 ## Other Important Dependencies
 
